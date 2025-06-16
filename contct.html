@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>あきらのポートフォリオ</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    .hero_inner_2 h2 span {
+      display: inline-block;
+    }
+  </style>
+    <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+          rel="stylesheet">
+  
+</head>
+
+<body>
+    <header>
+    <div class="container flex pop">
+        <a href="index.html" class="logo">
+            <span>Aki</span> Ra
+        </a>
+        <nav>
+            <ul class="header_menu flex">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+
+<div class="block">
+  <h2 class="large grid centered square-grid text-xl block h2">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+    <span>&nbsp;</span>
+    <span>P</span>
+    <span>A</span>
+    <span>G</span>
+    <span>E</span>
+  </h2>
+</div>
+    <section id="Contact" class="container">
+        <h2 class="title-2 pop">Contact</h2>
+        <h3>こちらからお問い合わせください。</h3>
+        <div class="">
+            <p>必須項目をすべてご記入し、連絡先や問い合わせ内容に誤りがないかご確認いただくようお願いいたします。</p>
+            </div>
+        <form>
+            <label class="label">お名前<span>（必須）</span></label><br>
+            <br>
+            <input type="text" name="name" id="name" required><br><br>
+
+            <label class="label">メールアドレス<span>（必須）</span></label><br>
+            <br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label class="label">お問い合わせ内容<span>（必須）</span></label><br>
+            <br>
+            <textarea name="message" id="message" required></textarea><br><br>
+
+            <button type="submit">送信</button>
+        </form>
+
+<script>
+  anime({
+    targets: 'h2 span',
+    translateY: [
+      { value: -44, duration: 600, easing: 'easeOutExpo' },
+      { value: 0, duration: 800, delay: 100, easing: 'easeOutBounce' }
+    ],
+    rotate: {
+      value: '1turn',
+      delay: 0
+    },
+    delay: (el, i) => i * 50,
+    easing: 'easeInOutCirc',
+    loop: true
+  });
+</script>
+
+</body>
+</html>
