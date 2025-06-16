@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>あきらのポートフォリオ</title>
+  
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+          rel="stylesheet">
+
+</head>
+  
+<body>
+  
+  <header>
+    <div class="container flex pop">
+        <a href="index.html" class="logo">
+            <span>Aki</span> Ra
+        </a>
+        <nav>
+            <ul class="header_menu flex">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+  
+  <main>
+    <section id="hero_2" class="container">
+        <div class="hero_inner_2">
+            <h1 class="pop">About Me</h1>
+            <p>私について</p>
+        </div>
+    </section>
+<!-- タイムライン＆自己紹介 -->
+    <section id="About_2" class="container">
+        <div class="heading">About</div>
+        <h2 class="title pop">About</h2>
+        <h3>あぎーってこんなひと</h3>
+        <div class="flex ">
+            <div class="column-about">
+            <p>沖縄生まれ、沖縄育ちの23歳。穏やかな性格で、笑顔を褒められることが多い。</p><br>
+            <ul class="timeline">
+            <li>
+                <p class="timeline-date">2008年6月</p>
+                <div class="timeline-content ">
+                <h3>小学生～中学生</h3>
+                <p>サッカー部に入部。チームではすぐにスタメン入りし、先輩に鍛えられる。地域選抜入りし、福岡遠征を経験。</p>
+                </div>
+            </li>
+            <li>
+                <p class="timeline-date">2017年4月</p>
+                <div class="timeline-content">
+                <h3>高校生</h3>
+                <p>工業高校に進学し、「ロボット制作部」に入部。第二種電気工事士や情報技術検定2級など資格試験も積極的に取得</p>
+                </div>
+            </li>
+            <li>
+                <p class="timeline-date">2020年4月</p>
+                <div class="timeline-content">
+                <h3>大学生</h3>
+                <p>琉球大学工学部に進学。起業支援を行う会社でのインターン、
+                教育系の会社でのインターン、ビジネスコンテストを開催する学生団体の代表を務めるなど幅広く活動を行う。</p>
+                </div>
+            </li>
+            </ul> 
+        </div>
+        <div class="column-about concept-img"></div>
+    </section>
+<!-- タイムライン＆自己紹介はここまで -->
+    <section id="hobby" class="container">
+        <div class="heading">hobby</div>
+        <h2 class="title pop">hobby</h2>
+        <p>サウナ／SUP／釣り／BBQ／ビールが好きです</p>
+            <div class="flex-2">
+                <div class="column-hobby concept-img-hobby-1 zoom-hover"data-img="../image/8.jpg"></div></a>
+                <div class="column-hobby concept-img-hobby-2 zoom-hover"data-img="../image/5.jpg"></div></a>
+                <div class="column-hobby concept-img-hobby-3 zoom-hover"data-img="../image/4.jpg"></div></a>
+                <div class="column-hobby concept-img-hobby-4 zoom-hover"data-img="../image/14.jpg"></div></a>
+                <div class="column-hobby concept-img-hobby-5 zoom-hover"data-img="../image/15.jpg"></div></a>
+                <div class="column-hobby concept-img-hobby-6 zoom-hover"data-img="../image/10.jpg"></div></a>
+            </div>
+            <div id="overlay" class="overlay">
+                <span id="closeBtn">&times;</span>
+                <img id="overlayImg" src="" alt="">
+            </div>
+    </section>
+
+    <!-- JavaScriptのコードを追加 -->
+    <script src="style.js"></script>
+    <!-- javascriptでのコーディング実験 -->
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>画像切り替え</title>
+        </head>
+        <body>
+            <h1>画像を切り替えてみよう！</h1>
+            <img id="slideshow" src="image/1.jpg" width="300">
+            <br>
+            <button onclick="changeImage()">画像を切り替える</button>
+        </body>
+    </html> 
+            </div>
+    </section>
+
+  </main>
+  
+  <footer></footer>
+  
+<div id="overlay" class="overlay">
+  <span id="closeBtn">&times;</span>
+  <img id="overlayImg" src="" alt="">
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
